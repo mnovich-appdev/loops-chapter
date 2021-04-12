@@ -10,5 +10,16 @@ p numbers.last
 while numbers.length < 100
   new_number = numbers.last + 1
   numbers.push(new_number)
-  p numbers.last
+  if 
+    numbers.last % 3 == 0 && numbers.last % 5 == 0
+    p "FizzBuzz"
+  elsif 
+    numbers.last % 3 == 0
+    p "Fizz"
+  elsif
+    numbers.last % 5 == 0
+    p "Buzz"
+  else
+    p numbers.last
+  end
 end
